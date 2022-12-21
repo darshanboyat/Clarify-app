@@ -90,10 +90,10 @@ export default function SimpleContainer() {
                                     <td className='invoice-view-table-data'>$52.00</td>
                                     <td className='invoice-view-table-data invoice-view-action-btns d-flex'>
                                         <a href="#" className='invoice-view-links'>
-                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </a>&nbsp;&nbsp;
                                         <div className='invoice-view-links' onClick={() => viewInvoice(item)}>
-                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -113,10 +113,10 @@ export default function SimpleContainer() {
                                     <td className='invoice-view-table-data'>$52.00</td>
                                     <td className='invoice-view-table-data invoice-view-action-btns d-flex'>
                                         <a href="#" className='invoice-view-links'>
-                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </a>&nbsp;&nbsp;
                                         <div className='invoice-view-links' onClick={() => viewBill(item)}>
-                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -136,10 +136,10 @@ export default function SimpleContainer() {
                                     <td className='invoice-view-table-data'>$52.00</td>
                                     <td className='invoice-view-table-data invoice-view-action-btns d-flex'>
                                         <a href="#" className='invoice-view-links'>
-                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </a>&nbsp;&nbsp;
                                         <div className='invoice-view-links' onClick={() => viewQoute(item)}>
-                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -159,10 +159,10 @@ export default function SimpleContainer() {
                                     <td className='invoice-view-table-data'>$52.00</td>
                                     <td className='invoice-view-table-data invoice-view-action-btns d-flex'>
                                         <a href="#" className='invoice-view-links'>
-                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn invoice-view-action-edit-btn' tooltip="Edit" icon={<SaveAsOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </a>&nbsp;&nbsp;
                                         <div className='invoice-view-links' onClick={() => viewPurchase(item)}>
-                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} />
+                                            <ActionBtn className='invoice-view-action-btn' tooltip="View" icon={<TextSnippetOutlinedIcon />} bgColor= "#AFDEE1" color="black"/>
                                         </div>
                                     </td>
                                 </tr>
