@@ -1,9 +1,9 @@
 // import Load from './Load'
-import { Puff } from "react-loader-spinner";
+import { Rings } from "react-loader-spinner";
 function App() {
   return (
     <div>
-      <Puff
+      <Rings
   height="80"
   width="80"
   radisu={1}
