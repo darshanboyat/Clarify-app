@@ -11,7 +11,7 @@ const Index = ({id}) => {
     React.useEffect(() => {
         axios.get(`${process.env.REACT_APP_BACKEND_URL}/view/invoice/${id}`, { headers: { 'authentication': 'Bearer ' + localStorage.getItem('token') } }).then(res => {
             setInvoice(res.data.invoice[0])
-            // setItem([...res.data.result.items])
+            setItem([...res.data.result.items])
         })
     })
 

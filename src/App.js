@@ -28,6 +28,9 @@ function App() {
         <div className="App">
             <Router/>
         </div>
+        <div className="mobileApp">
+          <h1>This site is not for mobile devices!!!</h1>
+        </div>
       {/* )} */}
     </>
   );
