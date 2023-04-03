@@ -2,24 +2,14 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import ItemTable from './ItemTable/ItemTable'
-import axios from 'axios'
 import Buttons from './Buttons/Buttons'
 import { useParams } from 'react-router-dom';
+import Invoice from "./Invoice/index.jsx"
 import './Invoice.css'
-import QrCode from './QRCode/QrCode';
 
 export default function SimpleContainer(props) {
     const {id} = useParams();
-    const [invoice, setInvoice] = React.useState([])
-    const [item, setItem] = React.useState([])
-
-    React.useEffect(()=>{
-        axios.get(`${process.env.REACT_APP_BACKEND_URL}/view/invoice/${id}`, { headers: { 'authentication': 'Bearer ' + localStorage.getItem('token')}}).then(res => {
-            setInvoice(res.data.invoice[0])
-            setItem([...res.data.result.items])
-        })
-    })
+    
 
     return (
         <React.Fragment>
@@ -29,52 +19,7 @@ export default function SimpleContainer(props) {
                     <Box className='d-flex'>
                     <Buttons/>
                     </Box>
-                    <div className="invoice-view" >
-                        <label htmlFor="" className='invoice-view-label d-flex'>INVOICE</label>
-                        <div className="invoice-view-number d-flex">
-                            <div className="invoice-view-number-container">
-                                <p className="heading">Invoice Number: &nbsp;</p>
-                                <p className="invoice-view-data">{invoice.invoiceNumber}</p>
-                            </div>
-                            <div className="invoice-view-company-name1">{invoice.companyName}</div>
-                        </div>
-                        <div className="invoice-view-number d-flex">
-                            <div className="invoice-view-number-container">
-                                <p className="heading">Invoice Date: &nbsp;</p>
-                                <p className="invoice-view-data">{invoice.invoiceDate}</p>
-                            </div>
-                            <div className="invoice-view-company-name">{invoice.companyName}</div>
-                        </div>
-                        <div className="invoice-view-number d-flex">
-                            <div className="invoice-view-number-container">
-                                <p className="heading">Reference Number: &nbsp;</p>
-                                <p className="invoice-view-data">{invoice.referenceNumber}</p>
-                            </div>
-                        </div>
-                        <div className="invoice-view-number d-flex">
-                            <div className="invoice-view-number-container">
-                                <p className="heading">Due Date: &nbsp;</p>
-                                <p className="invoice-view-data">{invoice.dueDate}</p>
-                            </div>
-                        </div>
-                        <div className="invoice-view-number">
-                            <div className="invoice-view-number-container-client">
-                                <p className="heading">Client Name &nbsp;</p>
-                                <hr className="mini-divider" />
-
-                                <p className="invoice-view-client-data">{invoice.customerName}</p>
-                                <p className="invoice-view-client-data">Billing Address: </p>
-                                <p className="invoice-view-data">{invoice.billingAddress}</p>
-                                <hr className="mini-divider" />
-
-                                <p className="heading">Description &nbsp;</p>
-                                {item.length > 0 && <ItemTable item = {item}/>}
-
-                                <p className="heading">E-Invoice &nbsp;</p>
-                                <QrCode invoiceNumber = {invoice.invoiceNumber}/>
-                            </div>
-                        </div>
-                    </div>
+                    <Invoice id={id}/>
                 </Box>
             </Container>
         </React.Fragment>

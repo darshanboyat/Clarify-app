@@ -37,6 +37,7 @@
     width: fit-content;
     font-family: 'Gilroy-Bold';
     color: black;
+    font-size: 13px;
 }
 
 .invoice-view-table-head-container{

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
+import logo from '../../assets/logo-white.png'
 import './Sidebar.css'
 
 function Sidebar() {
@@ -42,7 +43,7 @@ function Sidebar() {
 
     return (
         <div className='sidebar-container d-flex'>
-            <img src="https://fatoura.work/assets/images/Fatoura-Logo.png" width="248.26px" alt="" />
+            <img src={logo} width="248.26px" alt="" />
             <Box className='d-flex'>
                 <Box className="d-flex sidebar-links">
                     <Link to='/dashboard' className="sidebar-link" id="sidebar-link-1" onClick={() => { setState(1) }}><DashboardIcon />&nbsp;Dashboard</Link>

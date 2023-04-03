@@ -37,6 +37,7 @@
 }
 
 .invoice-view-number{
+    display: flex;
     justify-content: space-between;
 }
 .invoice-view-number-container{
@@ -50,7 +51,8 @@
     font-family: 'Gilroy-Bold';
 }
 .invoice-view-company-name1, .invoice-view-company-name{
-    margin-right: 35%;
+    margin: 0;
+    width: 100%;
 }
 .mini-divider{
     max-width: 60%;

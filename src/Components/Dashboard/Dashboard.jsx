@@ -5,7 +5,7 @@ import Cards from './Cards/Cards'
 import { useNavigate } from 'react-router-dom'
 import './Dashboard.css'
 function Dashboard() {
-    const navigate = new useNavigate()
+    const navigate = useNavigate()
     return (
         <>
             {localStorage.getItem('auth') ?
@@ -34,7 +34,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div> : <>
-                    {window.location.replace('http://localhost:3000/signin')}
+                    {navigate('/signin')}
                 </>
             }
         </>

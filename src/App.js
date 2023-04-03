@@ -1,5 +1,5 @@
 import "./App.css";
-import React from 'react'
+import React, { useEffect } from 'react'
 import Loading from "./Components/Loading/Spinner";
 import Router from "./Router"
 
@@ -12,17 +12,23 @@ function App() {
     }, 2000);
   };
 
+  useEffect(()=>{
+    return ()=>{
+      console.log("Cleaned")
+    }
+  }, [load])
+
   return (
     <>
-      {load ? (
+      {/* {load ? (
         <>
         <Loading />
         </>
-      ) : (
+      ) : ( */}
         <div className="App">
             <Router/>
         </div>
-      )}
+      {/* )} */}
     </>
   );
 }

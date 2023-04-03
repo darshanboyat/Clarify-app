@@ -10,6 +10,7 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { useForm } from 'react-hook-form';
 import Google from '../Google/LoginButton';
+import logo from "../../../assets/logo.png"
 import './Signup.css'
 import { useState } from 'react';
 
@@ -48,7 +49,7 @@ export default function BasicGrid() {
         <Grid item xs={6} className="signup-container">
           <Item className="signup-container">
             <Link to="/">
-              <img src="https://fatoura.work/assets/images/Fatoura-Logo-Dark.png" className='signup-logo' alt="" />
+              <img src={logo} className='signup-logo' alt="" />
             </Link>
             <Box className='signup-form-container'>
               <Typography className='signup-heading'>

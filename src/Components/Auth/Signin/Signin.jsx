@@ -12,6 +12,8 @@ import axios from 'axios'
 import './Signin.css'
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import logo from "../../../assets/logo.png"
+
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -53,7 +55,7 @@ export default function BasicGrid() {
         <Grid item xs={6} className="signing-container">
           <Item className="signing-container">
             <Link to="/">
-              <img src="https://fatoura.work/assets/images/Fatoura-Logo-Dark.png" className='signin-logo' alt="" />
+              <img src={logo} className='signin-logo' alt="" />
             </Link>
             <Box className='signin-form-container'>
               <Typography className='signin-heading'>

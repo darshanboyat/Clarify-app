@@ -6,11 +6,14 @@ import Pricing from '../Plans/Pricing'
 import Subscribe from './Subscribe/Subscribe'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
+import { useNavigate } from 'react-router-dom'
 function Home() {
+  const navigate = useNavigate()
+
   return (
     <>
-      {localStorage.getItem('auth') ?
-        window.location.replace('http://localhost:3000/dashboard')
+      {localStorage.getItem('token') ?
+        navigate('/dashboard')
         : <>
           <Navbar />
           <Tagline />

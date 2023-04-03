@@ -10,6 +10,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CustomButton from '../Button/Button'
 import {Link} from 'react-scroll'
+import logo from '../../assets/logo.png'
 import './Navbar.css'
 
 const pages = ['Home', 'Pricing', 'Contact Us'];
@@ -37,10 +38,10 @@ function ResponsiveAppBar() {
     }
 
   return (
-    <AppBar position="static" sx={{height: 100, backgroundColor: 'white', color: 'black'}}>
+    <AppBar position="sticky" sx={{height: 70, backgroundColor: 'white', color: 'black'}}>
       <Container maxWidth="xl" >
-        <Toolbar disableGutters sx={{padding: '16px 0px' }}>
-          <img src="https://fatoura.work/assets/images/Fatoura-Logo-Dark.png" width={170} alt="LOGO" style={{marginLeft: 68}}/>
+        <Toolbar disableGutters sx={{padding: '0px 0px' }}>
+          <img src={logo} width={100} alt="LOGO" style={{marginLeft: 68}}/>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -82,7 +83,7 @@ function ResponsiveAppBar() {
 
               <Link className='nav-link' to='home' spy={true} smooth={true} style={{color: 'black', fontFamily: 'Gilroy-ExtraBold', textDecoration: 'none'}} onClick={navHomeIndication}>Home</Link>
               <Link className='nav-link' to='pricing' spy={true} smooth={true} style={{color: 'black', fontFamily: 'Gilroy-ExtraBold', textDecoration: 'none'}} onClick={navPriceIndication}>Pricing</Link>
-              <Link className='nav-link' to='/' spy={true} smooth={true} style={{color: 'black', fontFamily: 'Gilroy-ExtraBold', textDecoration: 'none'}} onClick={navContactIndication}>Contact Us</Link>
+              <Link className='nav-link' to='contact' spy={true} smooth={true} style={{color: 'black', fontFamily: 'Gilroy-ExtraBold', textDecoration: 'none'}} onClick={navContactIndication}>Contact Us</Link>
 
             <span id='navIndicator' className='nav-indicator' style={{position: 'relative', zIndex: 9999, top: 30, left: '-93%', width: 8, height: 8, backgroundColor: '#0c4d71', borderRadius: 12}}/>
           </Box>

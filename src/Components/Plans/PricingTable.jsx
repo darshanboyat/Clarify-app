@@ -26,7 +26,7 @@ const rows = [
     createData('Multi-Currency', 'Yes', 'Yes', 'Yes'),
     createData('Sequential Invoice Numbering', 'Yes', 'Yes', 'Yes'),
     createData('Form Limitation', 10, 1500, 5000),
-    createData('    ', <><Button variant="outlined" sx={{padding: '16px 40px', borderRadius: '1rem', textTransform: 'capitalize', color: 'black', border: '.1px solid rgb(198, 198, 198)', '&:hover': {backgroundColor: 'white'}}}> Start Now<ArrowForwardIcon/></Button></>, <><Button variant="contained" sx={{padding: '16px 40px', borderRadius: '1rem', textTransform: 'capitalize', backgroundColor: '#0c4d71'}}> Get This<ArrowForwardIcon/></Button></>, <><Button variant="contained" sx={{padding: '16px 40px', borderRadius: '1rem', textTransform: 'capitalize', backgroundColor: '#0c4d71'}}> Get This<ArrowForwardIcon/></Button></>),
+    createData('    ', <><Button variant="outlined" sx={{borderRadius: '1rem', textTransform: 'capitalize', color: 'black', border: '.1px solid rgb(198, 198, 198)', padding: "0.8rem 0rem", width: "8rem", '&:hover': {backgroundColor: 'white'}}}> Start Now<ArrowForwardIcon/></Button></>, <><Button variant="contained" sx={{padding: '16px 40px', borderRadius: '1rem', textTransform: 'capitalize', backgroundColor: '#0c4d71', padding: "0.8rem 0rem", width: "8rem"}}> Get This<ArrowForwardIcon/></Button></>, <><Button variant="contained" sx={{padding: '16px 40px', borderRadius: '1rem', textTransform: 'capitalize', backgroundColor: '#0c4d71', padding: "0.8rem 0rem", width: "8rem"}}> Get This<ArrowForwardIcon/></Button></>),
 
 ];
 

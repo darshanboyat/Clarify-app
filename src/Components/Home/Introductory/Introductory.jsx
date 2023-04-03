@@ -7,6 +7,7 @@ import CallMadeIcon from "@mui/icons-material/CallMade";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import home1 from '../../../assets/home.png'
 import './Introductory.css'
 
 export default function SimpleContainer() {
@@ -33,7 +34,7 @@ export default function SimpleContainer() {
                             letterSpacing: 2,
                         }}
                     >
-                        Use Fatoura and win back your time
+                        Use Clarify and win back your time
                     </Typography>
                     <Stack spacing={2} direction="row" sx={{ ml: "33.5%", mt: 7 }}>
                         <Button
@@ -70,9 +71,9 @@ export default function SimpleContainer() {
                         </Button>
                     </Stack>
                     <img 
-                        src="https://fatoura.work/assets/images/section1.png"
+                        src={home1}
                         alt="Home Theme"
-                        style={{ marginTop: 60 }}
+                        style={{ marginTop: 60, width: "80%"}}
                     />
                 </Box>
                 <Box sx={{ display: "flex", textAlign: 'right'}}>
@@ -99,7 +100,7 @@ export default function SimpleContainer() {
                         </Typography>
                         <Box sx={{textAlign: 'right', maxWidth: 5}}>
                             <Typography variant="h5" sx={{ fontFamily: "Gilroy-ExtraBold", width: 450, ml: 18, mb: 2, itemAlign: 'left', fontFamily: 'Gilroy-ExtraBold'}}>
-                                Fatoura.work was built to serve freelancers and business owners with a complete suite of invoicing & payment tools to advance their business.
+                                Clarify.work was built to serve freelancers and business owners with a complete suite of invoicing & payment tools to advance their business.
                             </Typography>
                             <Typography variant="h5" sx={{ fontFamily: "Gilroy-ExtraBold", width: 450, ml: 18, itemAlign: 'left', fontFamily: 'Gilroy-ExtraBold'}}>
                                 Invoicing & Payments Every feature is geared towards accurate and secure invoicing and getting you paid.

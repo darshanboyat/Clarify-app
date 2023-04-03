@@ -13,11 +13,11 @@ export default function SimpleContainer() {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="100%" sx={{ bgcolor: '#ebf6f7', height: '99.9vh' }}>
+            <Container  id='contact' maxWidth="100%" sx={{ bgcolor: '#ebf6f7', height: '99.9vh' }}>
                 <Box className="contact-container">
                     <Box className="contact">
                         <Box className='contact-text'>
-                            <Typography id='pricing' variant='h5' sx={{ fontFamily: 'Gilroy-ExtraBold', fontSize: 20 }}>
+                            <Typography variant='h5' sx={{ fontFamily: 'Gilroy-ExtraBold', fontSize: 20 }}>
                                 <CallMadeIcon /> &nbsp; Contact Us
                             </Typography>
                             <Typography variant='h3' className="contact-caption">

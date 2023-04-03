@@ -29,7 +29,7 @@ export default function SimpleContainer(props) {
                     <Box className='d-flex'>
                         <Buttons />
                     </Box>
-                    <div className="invoice-view" >
+                    <div className="invoice-view" id="qoutation">
                         <label htmlFor="" className='invoice-view-label d-flex'>Qoute</label>
                         <div className="invoice-view-number d-flex">
                             <div className="invoice-view-number-container">
